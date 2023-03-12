@@ -1,0 +1,10 @@
+torch
+torchvision
+tensorflow
+wandb
+timm
+seaborn
+numpy
+scipy
+matplotlib
+pillow
