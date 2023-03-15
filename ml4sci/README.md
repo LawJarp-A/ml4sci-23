@@ -27,19 +27,13 @@ This is a scientific paper on the use of domain adaptation for simulation-based 
 
 ### Task 1 
 
-https://ml4sci.org/gsoc/2023/proposal_DEEPLENSE4.html
+**Task**: Build a model for classifying the images into lenses using PyTorch or Keras. Pick the most appropriate approach and discuss your strategy.
 
-Common Task 1: Electron/photon classification
-Datasets:
-* https://cernbox.cern.ch/index.php/s/AtBT8y4MiQYFcgc (photons: https://cernbox.cern.ch/remote.php/dav/public-files/FbXw3V4XNyYB3oA/SingleElectronPt50_IMGCROPS_n249k_RHv1.hdf5)
-* https://cernbox.cern.ch/index.php/s/FbXw3V4XNyYB3oA (electrons: https://cernbox.cern.ch/remote.php/dav/public-files/FbXw3V4XNyYB3oA/SingleElectronPt50_IMGCROPS_n249k_RHv1.hdf5)
 
-Description: 32x32 matrices (two channels - hit energy and time) for two classes of
-particles electrons and photons impinging on a calorimeter
+**Dataset Description**: The Dataset consists of three classes, strong lensing images with no substructure, subhalo substructure, and vortex substructure. The images have been normalized using min-max normalization, but you are free to use any normalization or data augmentation methods to improve your results.
 
-Please use a deep learning method of your choice to achieve the highest possible
-classification on this dataset (we ask that you do it both in Keras/Tensorflow and in
-PyTorch). Please provide a Jupyter notebook that shows your solution. The model you submit should have a ROC AUC score of at least 0.80.
+**Evaluation Metrics**: ROC curve (Receiver Operating Characteristic curve) and AUC score (Area Under the ROC Curve) 
+
 
 #### What is strong gravitational lensing?
 Strong gravitational lensing is a phenomenon predicted by Einstein's theory of general relativity in which the gravitational field of a massive object, such as a galaxy or a cluster of galaxies, bends the path of light from a more distant object, such as a quasar or a galaxy, behind it. This bending causes the distant object's light to be magnified and distorted into multiple images or arcs, forming a "gravitational lens". Strong gravitational lensing occurs when the lensing object is massive enough and positioned in just the right way to produce multiple, highly distorted images of the background object. Studying strong gravitational lensing can provide important insights into the distribution of mass in the lensing object and the nature of dark matter.
