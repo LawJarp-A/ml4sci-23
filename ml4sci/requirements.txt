@@ -8,3 +8,7 @@ numpy
 scipy
 matplotlib
 pillow
+torchmetrics
+fastai
+albumentations
+pytorch_lightning
