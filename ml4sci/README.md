@@ -1,11 +1,5 @@
 # Machine Learning for Science (ML4SCI)
 
-* [Gsoc page](https://summerofcode.withgoogle.com/programs/2022/organizations/machine-learning-for-science-ml4sci)
-* [Ideas page](https://ml4sci.org/gsoc/2023/summary.html)
-* [Pre-req](https://docs.google.com/document/d/1lWTSASnVICm_4Zof7wr6_LkS24P_Z8TR1px_tctemQI/edit?usp=sharing)
-* Socials
-  * [Gitter](https://matrix.to/#/#ML4SCI_general:gitter.im)
-
 
 # Project: DeepLense
 * **What is dark matter?**
@@ -23,6 +17,7 @@ The article discusses the challenges of detecting dark matter, which is believed
 ## Paper 3: 
 ### Brief
 This is a scientific paper on the use of domain adaptation for simulation-based dark matter searches using strong gravitational lensing. The authors discuss the challenges in identifying dark matter based on astrophysical or cosmological signatures and how machine learning can be used to extract these signals. However, machine learning models trained on simulations are expected to lose accuracy when applied to real data, and domain adaptation can serve as a bridge between simulations and real data applications. The authors demonstrate the power of domain adaptation techniques applied to strong gravitational lensing data with dark matter substructure and show that it can significantly mitigate the losses in the model performance. This technique can help domain experts build and apply better machine learning models for extracting useful information from strong gravitational lensing data expected from the upcoming surveys.
+
 ## Pre - Requisites
 
 ### Task 1 
@@ -33,6 +28,19 @@ This is a scientific paper on the use of domain adaptation for simulation-based 
 **Dataset Description**: The Dataset consists of three classes, strong lensing images with no substructure, subhalo substructure, and vortex substructure. The images have been normalized using min-max normalization, but you are free to use any normalization or data augmentation methods to improve your results.
 
 **Evaluation Metrics**: ROC curve (Receiver Operating Characteristic curve) and AUC score (Area Under the ROC Curve) 
+
+
+### Specific Test V. Exploring Transformers 
+
+**Task**: Use a vision transformer method of your choice to build a robust and efficient model for binary classification or unsupervised anomaly detection on the provided dataset. In the case of unsupervised anomaly detection, train your model to learn the distribution of the provided strong lensing images with no substructure. Please implement your approach in PyTorch or Keras and discuss your strategy.
+Dataset: https://drive.google.com/file/d/16Y1taQoTeUTP5rGpB0tuPZ_S30acvnqr/view?usp=sharing
+
+**Dataset Description**: A set of simulated strong gravitational lensing images with and without substructure. 
+**Evaluation Metrics**: ROC curve (Receiver Operating Characteristic curve) and AUC score (Area Under the ROC Curve)
+
+### Specific Test VIII. Self-Supervised Learning
+
+**Task**: Explore the use of Transformers/Hybrid architectures such as Equivariant Transformers with self-supervised learning for representation learning. Build a robust and efficient model for binary classification or regression on the provided datasets. Please implement your approach in PyTorch or Keras and discuss your strategy.	
 
 
 #### What is strong gravitational lensing?
